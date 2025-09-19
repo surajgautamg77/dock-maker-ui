@@ -394,9 +394,9 @@ function App() {
       setError("API connection failed, using demo file");
 
       // Default fallback response
-      setDocUrl(
-        "https://transcribedblobstorage.blob.core.windows.net/ai-rep-platform/tmpnx6f3btw.docx"
-      );
+      // setDocUrl(
+      //   "https://transcribedblobstorage.blob.core.windows.net/ai-rep-platform/tmpnx6f3btw.docx"
+      // );
     } finally {
       setLoading(false);
     }
