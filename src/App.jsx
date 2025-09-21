@@ -97,7 +97,7 @@
 //             <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2">
 //               PDF to DOCX Converter
 //             </h1>
-//             <p className="text-slate-600 text-lg">
+//             <p className="text-slate-300 text-lg">
 //               Convert and compare your documents seamlessly
 //             </p>
 //           </div>
@@ -108,7 +108,7 @@
 //         {/* Upload Section */}
 //         <div className="mb-8">
 //           <div
-//             className="relative border-2 border-dashed border-blue-300 rounded p-8 sm:p-12 text-center bg-white/50 backdrop-blur-sm hover:border-blue-400 hover:bg-white/60 transition-all duration-300"
+//             className="relative border-2 border-dashed border-blue-300 rounded p-8 sm:p-12 text-center bg-blue-400 backdrop-blur-sm hover:border-blue-400 hover:bg-white/60 transition-all duration-300"
 //             onDragOver={handleDragOver}
 //             onDrop={handleDrop}
 //           >
@@ -124,7 +124,7 @@
 //                 <Upload size={32} />
 //               </div>
 //               <div>
-//                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
+//                 <h3 className="text-xl font-semibold text-white mb-2">
 //                   Drop your PDF here or click to browse
 //                 </h3>
 //                 <p className="text-slate-500">
@@ -286,40 +286,40 @@
 //         {/* Features Section */}
 //         {!pdfUrl && !docUrl && (
 //           <div className="mt-16">
-//             <h2 className="text-2xl font-bold text-center text-slate-800 mb-8">
+//             <h2 className="text-2xl font-bold text-center text-white mb-8">
 //               Why Choose Our Converter?
 //             </h2>
 //             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-//               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+//               <div className="bg-blue-400 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
 //                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
 //                   <FileText className="text-blue-600" size={24} />
 //                 </div>
-//                 <h3 className="font-semibold text-slate-800 mb-2">
+//                 <h3 className="font-semibold text-white mb-2">
 //                   High Quality
 //                 </h3>
-//                 <p className="text-slate-600 text-sm">
+//                 <p className="text-slate-300 text-sm">
 //                   Preserve formatting and layout during conversion
 //                 </p>
 //               </div>
-//               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+//               <div className="bg-blue-400 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
 //                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
 //                   <CheckCircle className="text-green-600" size={24} />
 //                 </div>
-//                 <h3 className="font-semibold text-slate-800 mb-2">
+//                 <h3 className="font-semibold text-white mb-2">
 //                   Fast Processing
 //                 </h3>
-//                 <p className="text-slate-600 text-sm">
+//                 <p className="text-slate-300 text-sm">
 //                   Quick conversion with real-time preview
 //                 </p>
 //               </div>
-//               <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+//               <div className="bg-blue-400 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
 //                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
 //                   <Upload className="text-purple-600" size={24} />
 //                 </div>
-//                 <h3 className="font-semibold text-slate-800 mb-2">
+//                 <h3 className="font-semibold text-white mb-2">
 //                   Easy to Use
 //                 </h3>
-//                 <p className="text-slate-600 text-sm">
+//                 <p className="text-slate-300 text-sm">
 //                   Simple drag & drop interface
 //                 </p>
 //               </div>
@@ -435,19 +435,19 @@ function App() {
     <>
       <div className="min-h-screen bg-blue-800">
         {/* Header */}
-        <div className="bg-white/70 backdrop-blur-sm border-b border-white/20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+        <div className="bg-white backdrop-blur-sm border-b border-white/20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
             <div className="flex items-center justify-evenly">
               <img
                 src="https://image2url.com/images/1758429820215-640de727-bcdc-44fd-ab31-26f170c21e3e.png"
                 alt="Logo"
-                className="w-20 h-20 object-contain mr-4" // logo size + spacing
+                className="w-40 h-40 object-contain mr-4" // logo size + spacing
               />
               <div className="text-left">
-                <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-1">
-                  PDF to DOCX Converter
+                <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                  DOC Converter
                 </h1>
-                <p className="text-slate-600 text-lg">
+                <p className="text-slate-300 text-lg">
                   Convert and compare your documents seamlessly
                 </p>
               </div>
@@ -458,7 +458,7 @@ function App() {
           {/* Upload Section */}
           <div className="mb-8">
             <div
-              className="relative border-2 border-dashed border-blue-100 rounded p-8 sm:p-12 text-center bg-white backdrop-blur-sm hover:border-blue-400 hover:bg-blue-400 transition-all duration-300"
+              className="relative border-2 border-dashed border-blue-100 rounded p-8 sm:p-12 text-center bg-blue-400 backdrop-blur-sm hover:border-blue-400 hover:bg-blue-500 transition-all duration-300"
               onDragOver={handleDragOver}
               onDrop={handleDrop}
             >
@@ -474,10 +474,10 @@ function App() {
                   <Upload size={32} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-slate-800 mb-2">
+                  <h3 className="text-xl font-semibold text-white mb-2">
                     Click here to browse and upload PDF
                   </h3>
-                  <p className="text-slate-500">
+                  <p className="text-slate-300">
                     Support for PDF files up to 10MB
                   </p>
                 </div>
@@ -641,40 +641,38 @@ function App() {
           {/* Features Section */}
           {!pdfUrl && !docUrl && (
             <div className="mt-16">
-              <h2 className="text-2xl font-bold text-center text-slate-800 mb-8">
+              <h2 className="text-2xl font-bold text-center text-slate-300 mb-8">
                 Why Choose Our Converter?
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+                <div className="bg-blue-400 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <FileText className="text-blue-600" size={24} />
                   </div>
-                  <h3 className="font-semibold text-slate-800 mb-2">
+                  <h3 className="font-semibold text-white mb-2">
                     High Quality
                   </h3>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-slate-300 text-sm">
                     Preserve formatting and layout during conversion
                   </p>
                 </div>
-                <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+                <div className="bg-blue-400 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <CheckCircle className="text-green-600" size={24} />
                   </div>
-                  <h3 className="font-semibold text-slate-800 mb-2">
+                  <h3 className="font-semibold text-white mb-2">
                     Fast Processing
                   </h3>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-slate-300 text-sm">
                     Quick conversion with real-time preview
                   </p>
                 </div>
-                <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
+                <div className="bg-blue-400 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Upload className="text-purple-600" size={24} />
                   </div>
-                  <h3 className="font-semibold text-slate-800 mb-2">
-                    Easy to Use
-                  </h3>
-                  <p className="text-slate-600 text-sm">
+                  <h3 className="font-semibold text-white mb-2">Easy to Use</h3>
+                  <p className="text-slate-300 text-sm">
                     Simple drag & drop interface
                   </p>
                 </div>
@@ -684,7 +682,7 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-16 py-8 text-slate-500 flex items-center justify-center text-center text-sm border-t border-white/20">
+        <footer className="mt-16 py-8 text-slate-100 flex items-center justify-center text-center text-sm border-t border-white/20">
           <p>Powered by -</p>
 
           <img
