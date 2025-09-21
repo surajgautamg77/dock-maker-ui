@@ -379,7 +379,7 @@ function App() {
 
     setLoading(true);
     try {
-      const res = await fetch("https://dock-maker-api.onrender.com/convert/", {
+      const res = await fetch("http://34.172.18.43/convert/", {
         method: "POST",
         body: formData,
       });
@@ -436,29 +436,30 @@ function App() {
       <div className="min-h-screen bg-blue-800">
         {/* Header */}
         <div className="bg-white backdrop-blur-sm border-b border-white/20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-            <div className="flex items-center justify-evenly">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between">
               <img
-                src="https://image2url.com/images/1758429820215-640de727-bcdc-44fd-ab31-26f170c21e3e.png"
+                src="https://image2url.com/images/1758436285094-d54dce47-b0c7-4ad7-9006-11b75ec8ebf5.jpg"
                 alt="Logo"
-                className="w-40 h-40 object-contain mr-4" // logo size + spacing
+                className="w-30 h-30 object-contain mr-4" // logo size + spacing
               />
-              <div className="text-left">
-                <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <div className="text-center">
+                <h1 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-blue-700">
                   DOC Converter
                 </h1>
-                <p className="text-slate-300 text-lg">
+                <p className="text-slate-500 text-lg">
                   Convert and compare your documents seamlessly
                 </p>
               </div>
+              <div></div>
             </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {/* Upload Section */}
-          <div className="mb-8">
+          <div className="my-8">
             <div
-              className="relative border-2 border-dashed border-blue-100 rounded p-8 sm:p-12 text-center bg-blue-400 backdrop-blur-sm hover:border-blue-400 hover:bg-blue-500 transition-all duration-300"
+              className="relative border-2 border-dashed border-blue-100 rounded p-4 text-center bg-blue-400 backdrop-blur-sm hover:border-blue-400 hover:bg-blue-500 transition-all duration-300"
               onDragOver={handleDragOver}
               onDrop={handleDrop}
             >
